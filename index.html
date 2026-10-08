@@ -1,0 +1,40 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<div class="map-container">
+  <div class="map-header">
+    <h1>Global Stability Map</h1>
+    <p>Explore political stability and global risk by country.</p>
+  </div>
+
+  <div class="controls">
+    <input 
+      type="text" 
+      id="countrySearch" 
+      placeholder="Search for a country..."
+    >
+  </div>
+
+  <div id="map"></div>
+
+  <div class="legend">
+    <h3>Risk Level</h3>
+    <div><span class="legend-dot low"></span> Low</div>
+    <div><span class="legend-dot moderate"></span> Moderate</div>
+    <div><span class="legend-dot high"></span> High</div>
+    <div><span class="legend-dot critical"></span> Critical</div>
+  </div>
+
+  <div id="countryInfo" class="country-info">
+    <h2>Select a country</h2>
+    <p>Click on a country on the map to explore its data.</p>
+  </div>
+</div>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="script.js"></script>
